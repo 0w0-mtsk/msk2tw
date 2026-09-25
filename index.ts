@@ -27,6 +27,9 @@ app.post("/", async (c) => {
   }
   const payload: Payload = await c.req.json();
   const { text, cw, visibility, localOnly, files } = payload.body.note;
+  if (!text || !text.includes("#misshaialert")){
+    return c.text("skipped", 200);
+  }
   if (localOnly) {
     const msg = `post visibility: "local only"`;
     timelog(msg);
