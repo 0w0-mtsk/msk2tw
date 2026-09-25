@@ -8,7 +8,7 @@ export const tweet = async (
   mediaIds?: string[],
 ) => {
   const url =
-    "https://twitter.com/i/api/graphql/tTsjMKyhajZvK4q76mpIBg/CreateTweet";
+    "https://x.com/i/api/graphql/IID9x6WsdMnTlXnzXGp8ng/CreateTweet";
   const authorization =
     "Bearer AAAAAAAAAAAAAAAAAAAAANRILgAAAAAAnNwIzUejRCOuH5E6I8xnZz4puTs%3D1Zv7ttfk8LF81IUq16cHjhLTvJu4FA33AGWWjCpTnA";
   const body: CreateTweetRequest = {
